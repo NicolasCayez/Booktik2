@@ -1,0 +1,122 @@
+.spoiler {
+    display: none;
+}
+
+
+/********************************************/
+/** Couleurs
+/********************************************/
+.bg-custom-red {
+    background-color: rgb(213, 109, 4);
+}
+
+/********************************************/
+/** Couleurs accordeon
+/********************************************/
+
+
+.accordion {
+    border: solid 2px rgb(213, 109, 4);
+    padding: 0;
+    --bs-accordion-btn-color: white;
+    --bs-accordion-btn-bg: rgb(213, 109, 4);
+    --bs-accordion-active-color: white;
+    --bs-accordion-active-bg: rgb(145, 74, 3);
+}
+
+
+/********************************************/
+/** Liste de liens sans point
+/********************************************/
+.btnMenu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btnMenu a:hover {
+    color: white;
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ----------------- paramètres header et footer (navbar, logo, titre et menu) ----------------- */
+/* Logo  en haut a gauche taille fixe */
+
+
+/* Liens du menu style boutons */
+.btnMenu {
+    border-radius: 10px;
+    width: 170px;
+    height: 30px;
+    box-shadow: #ffffff 0px 0px 3px;
+    color: #ffffff;
+}
+
+.btnMenu:hover {
+    background-color: #ffffff;
+    color: rgb(213, 109, 4);
+    cursor: pointer;
+}
+
+.logoBouton {
+    height: 20px;
+    width: 20px;;
+}
+
+/* checkbox cachée en version PC */
+#navbarHeader input[type="checkbox"],
+#navbarHeader .hamburger-lines {
+    display: none;
+}
+/* menu hamburger caché */
+.hiddenMenu{
+    display: none;
+}
+
+/* Taille et aspect des textes */
+#titre_admin{
+    text-shadow: #f2dcc2 0px 0px 3px;
+}
+
+#titrePage{
+    font-size: x-large;
+}
+.sousTitre{
+    font-size: medium;
+}
+
+/* ----------------- Corps de la page ----------------- */
+/* Cadre texte */
+.textDiv{
+    text-align: justify;
+    text-indent: 2em;
+}
+/* ----------------- Formulaire ----------------- */
+.redStar{
+    color: orangered;
+}
+
+/* ----------------- MEDIA QUERIES ----------------- */
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+}

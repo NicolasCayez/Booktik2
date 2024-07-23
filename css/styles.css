@@ -1,0 +1,193 @@
+
+
+/********************************************/
+/** Suppression marge bootstrap
+/********************************************/
+.container-fluid, container, .row { 
+    margin: 0 !important;
+}
+
+
+/********************************************/
+/** Couleurs
+/********************************************/
+.bg-custom-beige{
+    background-color: #f2dcc2;
+}
+.bg-custom-bleu{
+    background-color: #275f74;
+}
+.bg-custom-bleu-2{
+    background-color: #afdff3;
+}
+
+.custom-beige{
+    color: #f2dcc2;
+}
+.custom-bleu{
+    color: #275f74;
+}
+.custom-bleu-2{
+    color: #afdff3;
+}
+
+.arrondi10 {
+    border-radius: 10px;
+}
+
+/********************************************/
+/** formes
+/********************************************/
+.arrondi10 {
+    border-radius: 10px;
+}
+
+/********************************************/
+/** header
+/********************************************/
+/* Logo  en haut a gauche taille fixe */
+.logo {
+    min-width: 200px;
+    max-width: 200px;
+    position: absolute;
+    top:0%;
+    left: 10px;
+}
+
+
+/********************************************/
+/** Corps de la page
+/********************************************/
+
+
+
+/********************************************/
+/** Formulaire
+/********************************************/
+.redStar{
+    color: orangered;
+}
+
+
+/********************************************/
+/** MEDIA QUERIES
+/********************************************/
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+    /* Navbar moins épaisse */
+    #navbarHeader {
+    height: 50px;
+    }
+    /* Menu Hamburger visible et checkbok pour le piloter */
+    #navbarHeader input[type="checkbox"],
+    #navbarHeader .hamburger-lines {
+    display: block;
+    }
+
+    #navbarHeader input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 15px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+    }
+    /* aspect du hamburger */
+    #navbarHeader .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    /* aspect des lignes du hamburger */
+    #navbarHeader .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #f2dcc2;
+    }
+    /* animation des lignes du hamburger: durée et point de départ */
+    #navbarHeader .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+    }
+    #navbarHeader .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+    }
+    #navbarHeader .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+    }
+    /* aspect des liens quand le menu hamburger est visible */
+    .hiddenMenu {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background: #275f74;
+    opacity: 0.9;
+    transform: translateY(-500%);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 0px 5px 5px #275f74;
+    }
+    .btnMenu {
+        margin-top: 15px;
+    }
+    /* réduction taille logo */
+    .logo {
+    top: -5px;
+    min-width: 80px;
+    max-width: 80px;
+    }
+    /* animation des lignes du hamburger */
+    #navbarHeader input[type="checkbox"]:checked ~ .hiddenMenu {
+        transform: translateY(
+            0);
+    }
+    #navbarHeader input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: translateX(10%) rotate(45deg) scale(80%);
+    }
+    #navbarHeader input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+    #navbarHeader input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-40deg);
+    }
+
+    /* réduction taille tite */
+    #titrePage{
+        font-size:medium;
+    }
+    .sousTitre{
+        font-size: small;
+    }
+    #menuHeader{
+        display: none;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+}

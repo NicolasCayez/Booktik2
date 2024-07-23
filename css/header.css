@@ -1,0 +1,40 @@
+.custom-bg-blue {
+    background-color: #1C85A6;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+input[type=text] {
+    border: none;
+}
+
+.search-container button {
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+.icone {
+    width: 50px;
+}
+
+.texte-icone {
+    font-size: small;
+}
